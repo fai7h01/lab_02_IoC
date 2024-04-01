@@ -22,6 +22,11 @@ public class Config {
         return new Saving(currency,new BigDecimal("1000"),UUID.randomUUID());
     }
 
+//    @Bean
+//    Saving saving(){
+//        return new Saving(currency(),new BigDecimal("1000"),UUID.randomUUID());
+//    }
+
     @Bean
     Current current(Currency currency){
         return new Current(currency,new BigDecimal("1500"),UUID.randomUUID());
